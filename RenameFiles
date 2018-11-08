@@ -1,0 +1,9 @@
+import os
+path = 'C:\\Users\\User\\Desktop\\05 Tarun\\Iphone\\parts image\\3'
+files = os.listdir(path)
+i = 1
+
+for file in files:
+	os.rename(os.path.join(path, file), os.path.join(path, '0000' + file[7:9] +'_'+file))
+
+    
